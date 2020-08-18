@@ -222,9 +222,12 @@
     margin: 0px 10px;
     display: inline-block;
    padding: 10px;
-    width: 300px;
+    width: 30px;
     height: 350px;
     border-radius: 20px;
+}
+.post:focus{
+outline: none;
 }
 .prev{
    position: relative;
@@ -232,6 +235,7 @@
    left:80px;
    font-size: 26px;
    cursor: pointer;
+  
 }
 .next{
    position: relative;
@@ -240,14 +244,37 @@
    font-size: 26px;
    cursor: pointer;
 }
-
+.next:focus,.prev:focus{
+    outline: none;
+}
+.post-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .slider-image{
     margin :0px auto;
     object-fit: contain;
-    height: 350px;
+    max-height: 280px;
     border-radius: 20px;
     box-shadow: 1rem 1rem 1rem -1rem #6634bd63;
 }
+.post-info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #1a326a ;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+.post-info>h2{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .contact{
     /* height: 80vh; */
     background-color: #2E2E2E;
@@ -309,6 +336,9 @@ margin-bottom: 20px;
     background-color: white;
     border-radius: 30px;
 }
+.button-submit:focus{
+    outline: none;
+}
 
 .aboutus{
     margin-top: 100px;
@@ -364,12 +394,14 @@ font-weight: bold;
 html{
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+  }
 @media only screen and (max-width: 500px) and (min-width: 300px)
  {
 .home{
     margin-top: 40px;
-    height: 90vh;
+    height: 98vh;
 }
   .navbar-brand{
      padding: 0px;
@@ -387,8 +419,10 @@ html{
   }
 
   .banner-logo{
-      margin-top: -20px;
-     width:150px;
+      margin-top: -50px;
+     height:160px;
+     object-fit: contain;
+
   }
   .buttons{
       font-size: 12px !important;
@@ -421,17 +455,18 @@ html{
     justify-content: space-between;
   }
   .prev{
-      left:7px;
+      left:15px;
       font-size: 18px;
   }
   .next{
-      right:7px;
+      right:14px;
       font-size: 18px;
   }
   .slideshow{
     height: 250px;
   
 }
+
 .post{
     margin: 0px 10px;
     /* width: 100%; */
@@ -440,7 +475,9 @@ html{
     object-fit: contain;
     height: 200px;
 }
- 
+.aboutus{
+    align-items: center;
+}
 .aboutus-info{
 margin: auto;
 }
