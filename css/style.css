@@ -121,6 +121,7 @@
 .b-img1 , .b-img2 , .b-img3{
        height: 600px !important;
        object-fit: contain;
+       image-orientation: from-image;
    }
    /* end first page */
 
@@ -468,8 +469,9 @@ body::-webkit-scrollbar{
 }
 
 .post{
-    margin: 0px 10px;
-    /* width: 100%; */
+    margin: 0px 5px;
+    border-radius: 10px;
+
 }
 .slider-image{
     object-fit: contain;
