@@ -382,22 +382,23 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
+
 .footer-content{
     display: flex;
     align-items: center;
     justify-content: center;
-margin: 5px auto;
-font-family: 'Raleway', sans-serif;
-font-weight: bold;
+    margin: 5px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
+
 html{
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar{
     display: none;
-  }
+}
 @media only screen and (max-width: 500px) and (min-width: 300px)
  {
 .home{
